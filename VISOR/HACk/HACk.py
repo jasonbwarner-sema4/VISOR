@@ -134,7 +134,7 @@ def run(parser,args):
 					exitonerror(os.path.abspath(args.output))
 
 
-				if (int(entries[2]) - int(entries[1]) == 0):
+				if (int(entries[2]) - int(entries[1]) == -1):
 
 					logging.error('Start ' + str(entries[1]) + ' and end ' + str(entries[2]) + ' cannot have the same value in .bed ' + os.path.abspath(bed) + '.')
 					exitonerror(os.path.abspath(args.output))
