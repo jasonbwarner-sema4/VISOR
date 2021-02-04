@@ -28,7 +28,7 @@ RUN curl -LO https://github.com/samtools/samtools/releases/download/1.11/samtool
 RUN curl -L https://github.com/lh3/minimap2/releases/download/v2.17/minimap2-2.17_x64-linux.tar.bz2 | tar -jxvf -
 ENV PATH="${PATH}:/minimap2-2.17_x64-linux"
 #get VISOR and the required python dependencies
-RUN git clone https://github.com/davidebolo1993/VISOR.git && cd VISOR && pip install -r requirements.txt && pip install --upgrade cython && python setup.py install
+RUN git clone https://github.com/jasonbwarner-sema4/VISOR && cd VISOR && pip install -r requirements.txt && pip install --upgrade cython && python setup.py install
 
 #Pull with:
 #sudo docker pull davidebolo1993/visor

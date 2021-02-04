@@ -5,7 +5,7 @@ from setuptools import setup,find_packages
 setup(name='VISOR',      
   version=1.1,
   description='VarIant SimulatOR',
-  url='https://github.com/davidebolo1993/VISOR.git',
+  url='https://github.com/jasonbwarner-sema4/VISOR.git',
   requires=['python (>= 3.6)'],
   author='Davide Bolognini',
   author_email='davidebolognini7@gmail.com',
