@@ -409,8 +409,8 @@ def run(parser,args):
 				if len(str(x[4])) != x.end-x.start +1: #check that the length of the sequence that has to be replaced mathces the length of a user-defined sequence
 
 					now=datetime.now().strftime('%d/%m/%Y %H:%M:%S')
-					print('[' + now + '][Error] Line ' + str(j+1) + ':  column 5 (variant information) contains a sequence shorter/longer than region')
-					sys.exit(1)
+					print('[' + now + '][Warning] Line ' + str(j+1) + ':  column 5 (variant information) contains a sequence shorter/longer than region')
+					#sys.exit(1)
 
 				if int(x[5]) != 0: #no random sequence at breakpoint: not a SV
 
